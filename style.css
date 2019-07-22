@@ -1,0 +1,60 @@
+.hero-image {
+  background-image: url("./images/2009_Volvo_S60_Concept-Image-01.png"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.hero-image2 {
+  background-image: url("./images/288m.png"); /* The image used */
+  /*background-color: #cccccc; !* Used if the image is unavailable *!*/
+  height: 300px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.container {
+  position: relative;
+  /*width: 50%;*/
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(50%, 70%);
+  text-align: center;
+  /*margin-left: 20px;*/
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  border: skyblue 2px solid;
+  color: skyblue;
+  font-size: 16px;
+  width: 70px;
+  margin-left: 75px;
+  margin-top: 20px;
+}
+
